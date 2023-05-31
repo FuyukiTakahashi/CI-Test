@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  overflow: hidden;
+}
+.todoList{
+  display: flex;
+  flex-direction:column;
+  list-style-type: none;
+}
+.todoList li{
+  width: 800px;
+  text-align: center;
+  margin: 10px;
+}
+.checkBox{
+  float: left;
+  width: 20px;
+  height: 20px;
+  accent-color: blue;
+}
+.removeBtn{
+  float: right;
+  border: none;
+  font-size: 18px;
+  color: gray;
+  background-color: white;
+}
+.removeBtn:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.input{
+  border-radius: 5px;
+  width: 600px;
+  height: 40px;
+  border: 1px solid gray;
+  margin: 10px;
+  text-align: left;
+}
+hr{
+  margin: 10px;
+}
+.addBtn{
+  margin: 10px 40px;
+  width: 100px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: blue;
+  border: 1px solid white;
+  color:white;
+}
+.addBtn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.header p{
+  font-size: 40px;
+  margin: 10px;
+}
+.header ul{
+  width: 800px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+.navUl .inactive{
+  color: black;
+  text-decoration: none;
+}
+ 
+.header hr{
+  margin: 10px;
+  color: gray;
+  width: 800px;
+}
+.active{
+ color: black;
+ text-decoration: none;
+ border: solid 5px white;
+ border-bottom-color: blue;
+}
+
+.checkBox:checked + label {
+  text-decoration: line-through;
+  color: gray;
+}
+.deleteAllBtn{
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.deleteAllBtn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
