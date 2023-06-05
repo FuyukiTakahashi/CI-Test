@@ -1,14 +1,11 @@
 import TodoForm from "../TodoForm";
-import TodoProvider from "../providers/TodoProvider";
-import TodoList from "../TodoList";
+import TodoListActive from "../Active/TodoListActive";
 
 function Active(){
     return(
-        <div>
-            <TodoProvider>
+        <div>          
                 <TodoForm/>
-                <TodoList/>
-            </TodoProvider>
+                <TodoListActive /> 
         </div>
     );
 }

@@ -1,16 +1,11 @@
-import TodoProvider from "../providers/TodoProvider";
-import RemoveAll from "../RemoveBtn";
 import TodoForm from "../TodoForm";
-import TodoList from "../TodoList";
+import TodoList from "../All/TodoList";
 
 function Home(){
     return(
         <div>
-            <TodoProvider>
                 <TodoForm/>
-                <TodoList/>
-                <RemoveAll/>
-            </TodoProvider>
+                <TodoList/>          
         </div>
         
     );

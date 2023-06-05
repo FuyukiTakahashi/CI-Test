@@ -1,13 +1,18 @@
-import TodoProvider from "../providers/TodoProvider";
-import TodoList from "../TodoList";
+import TodoListComplete from "../Completed/TodoListComplete";
+import {TodoContext} from "../providers/TodoProvider";
+import React,{ useContext } from "react";
+
 
 function Complete(){
-
+    const [todoList,setTodoList] = useContext(TodoContext);
+    const handleRemoveAll=()=>{
+        const temp = todoList.filter(todo=>todo.complete ===false);
+        setTodoList(temp);
+    }
     return(
         <div>
-            <TodoProvider>
-                <TodoList/>
-            </TodoProvider>
+                <TodoListComplete/>
+                <button id="deleteAllBtn" onClick={()=>handleRemoveAll()}>Delete All Complete</button>           
         </div>
     );
 }

@@ -20,7 +20,7 @@
   float: left;
   width: 20px;
   height: 20px;
-  accent-color: blue;
+  
 }
 .removeBtn{
   float: right;
@@ -92,20 +92,36 @@ hr{
  border: solid 5px white;
  border-bottom-color: blue;
 }
-
-.checkBox:checked + label {
+.completed{
   text-decoration: line-through;
-  color: gray;
+  color: red;
 }
-.deleteAllBtn{
-  width: 100px;
-  height: 30px;
+li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+lable{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.todoName{
+  margin-left: 50px;
+}
+#deleteAllBtn{
   background-color: red;
   color: white;
-  border-radius: 5px;
-  border: none;
+  width: 200px;
+  height: 50px;
+  border: white;
+  border-radius: 10px;
 }
-.deleteAllBtn:hover{
+#deleteAllBtn:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
+
